@@ -2,18 +2,22 @@
   "name": "sound",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify index.js -o docs/index.js"
+    "build": "browserify index.js -o docs/index.js",
+    "start": "electron ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@electron/remote": "^2.0.9",
+    "adm-zip": "^0.5.10",
     "audio-encoder": "^1.0.4",
     "file-saver": "^2.0.5"
   },
   "devDependencies": {
-    "browserify": "^17.0.0"
+    "browserify": "^17.0.0",
+    "electron": "^23.1.3"
   }
 }
